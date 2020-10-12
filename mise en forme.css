@@ -1,0 +1,26 @@
+.bande{
+    background-color: black ;
+    text-align: center;
+}
+h1 {
+    color: black;
+}
+P {
+    color: black;
+}
+.bande a {
+    display: inline-block;
+    background-color: red;
+    color: white; 
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: lawngreen;
+}
+
+a:hover {
+    background-color: rgb(199, 193, 184);
+}
+
+.active {
+    background-color: black;
+}
