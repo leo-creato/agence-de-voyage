@@ -10,22 +10,22 @@
         <form action="/test.html" method="GET">
             <fieldset>
                 <legend>Identité</legend>
-                Prénom :<br>
+                Prénom :*<br>
                 <input type="text" name="firstname" value=""><br>
-                Nom :<br>
+                Nom :*<br>
                 <input type="text" name="lastname" value=""><br><br>
                 <input type="radio" name="sexe" value="Homme" checked> Homme<br>
                 <input type="radio" name="sexe" value="Femme" checked> Femme<br><br>
             </fieldset><br> 
             <fieldset>
                 <legend>Informations</legend>
-                adresse mail:<br>
+                adresse mail:*<br>
                 <input type="text" name="adresse mail" value=""><br>
-                Numéro de Téléphone:<br>
+                Numéro de Téléphone:*<br>
                 <input type="text" name="Téléphone" value=""><br>
                 adresse:<br>
                 <input type="text" name="adresse" value=""><br>
-                Nombre d'adulte<br>
+                Nombre d'adulte:*<br>
                 <select name="Nombre d'adulte(s)">
                     <option value="1 adulte">1</option>
                     <option value="2 adultes">2</option>
@@ -34,7 +34,7 @@
                     <option value="5 adultes">5</option>
                     <option value="6 adultes">6</option>
                 </select><br>
-                Nombre d'enfants<br>
+                Nombre d'enfants:*<br>
                 <select name="Nombre d'adulte(s)">
                     <option value="1 enfant">1</option>
                     <option value="2 enfants">2</option>
@@ -42,9 +42,21 @@
                     <option value="4 enfants">4</option>
                     <option value="5 enfants">5</option>
                     <option value="6 enfants">6</option>
-                </select>
+                </select><br>
+                Choisissez une date de départ:* 
+                <input type="date" name="week_year"><br>
+                Choisissez une date d'arrivée:* 
+                <input type="date" name="week_year"><br>
+                Animal:*
+                <input type="radio" name="Animal" value="OUI" checked> OUI
+                <input type="radio" name="Animal" value="NON" checked> NON<br>
+                Si Oui, indiquez le type d'animal :<br>
+                <textarea>Ici</textarea><br> 
+                Petit déjeuner:*
+                <input type="radio" name="Ptit dej" value="" checked> 
+                Les champs avec un * sont obligatoire à remplir
             </fieldset><br>    
-            <input type="submit" value="Submit">
+            <input type="submit" value="Enregistrer">
          </form>
             
     </body>
