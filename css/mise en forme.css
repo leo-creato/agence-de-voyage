@@ -21,15 +21,24 @@ P {
 }
 
 a:hover {
-    background-color: rgb(199, 193, 184);
+    background-color: darkorange;
 }
 
 .active {
     background-color: black;
 }
 body {
-    background-image: url("../Image/tuk-tuk-250288__480.jpg");
+    background-image: url(""");
     background-position: top right;
     background-repeat: no-repeat;
     background-attachment:fixed;
+}
+h2 {
+    width: 50%;
+    text-align: center;
+}
+#conteneur
+h3 {
+    display: flex;
+    flex-direction: column;
 }
