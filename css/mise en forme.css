@@ -28,5 +28,8 @@ a:hover {
     background-color: black;
 }
 body {
-    background-image: ;
+    background-image: url("../Image/tuk-tuk-250288__480.jpg");
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
 }
