@@ -13,3 +13,11 @@ var Caracas = new Destinations("Caracas"," ../","50")
 var Pyongyang = new Destinations("Pyongyang","../","500")
 var Damas = new Destinations("Damas","../","100")
 
+//Formulaire
+
+    //Récupérer les informations 
+
+    let NbrAdultes= document.getElementsByName("Nombre d'adulte(s)")
+    let NbrEnfants= document.getElementsByName("Nombre d'enfant(s)")
+
+    
