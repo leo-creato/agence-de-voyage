@@ -4,14 +4,17 @@
 }
 h1 {
     color: black;
+    text-align:center
 }
 P {
+    font-style: italic;
     color: black;
+    text-align:center
 }
 .bande a {
     display: inline-block;
-    background-color: red;
-    color: white; 
+    background-color: red; /*couleur de fond */
+    color: white; /*couleur du text de la page */
     text-align: center;
     padding: 15px 15px;
     text-decoration: lawngreen;
@@ -23,4 +26,7 @@ a:hover {
 
 .active {
     background-color: black;
+}
+body {
+    background-image: ;
 }
