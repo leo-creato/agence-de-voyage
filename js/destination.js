@@ -7,11 +7,13 @@ class Destinations{
         this._prix=pr;
     }
 }
-//Destinations
-
+// Tableau de Destination
 var Caracas = new Destinations("Caracas"," ../","50")
 var Pyongyang = new Destinations("Pyongyang","../","500")
 var Damas = new Destinations("Damas","../","100")
+var Perth = new Destinations("Perth","../","700")
+var Acapulco = new Destinations("Acapulco","../","650")
+var Antigua = new Destinations("Damas","../","300")
 
 //Formulaire
 
@@ -34,3 +36,4 @@ var Damas = new Destinations("Damas","../","100")
         }
     }
         document.getElementById("zoneprix").innerHTML = PrixTotal + "Euros"
+
