@@ -15,5 +15,5 @@ class formulaire{
     get nom() {return this.nom;}
     set nom(m) {this.nom = m;}
 
-    set dej() {this.def = 1}
+    set dej() {this.dej = 1}
 }
