@@ -5,22 +5,32 @@
 		<title>TTV</title>
 		<script src='../js/destination.js'>  </script>
 		<script src='../js/template.js'></script>
+		<link rel="stylesheet" href="../css/forme.css">
 	</head>
 
 	<body>
-		<h1>TUK TUK voyage</h1>
-		<p><img src="../Image/accueil.jpg" width="500" height="300" alt="Poutine"></p>
-
-		<fieldset>
-			<legend>Filtrage</legend>
-		 	Date de départ:* 
-        	<input type="date"/>
-        	Date d'arrivée:* 
-			<input type="date"/><br>
-		</fieldset>
+		<h1>TUK-TUK Voyage</h1>
+			<p>Bienvenu sur TUK-TUK Voyage, des voyages dans des destinations originales</p>
+			<nav class="bande">
+			<a href="../HTML/accueil.html" class="active">Accueil</a>
+			<a href="../HTML/panier.html" class="active">Panier</a>
+			<a href="../HTML/contact.html" class="active">Contact</a>
+			</nav>
+			<fieldset>
+				<legend>Filtrage</legend>
+				 Date de départ:* 
+				<input type="date"/>
+				Date d'arrivée:* 
+				<input type="date"/><br>
+			</fieldset>
+		<h3>
+			<img src="../Image/caracas.jpg" width="337" height="250" alt="caracas">
+			<img src="../Image/damas.jpg" width="337" height="250" alt="damas">
+			<img src="../Image/pyongyang.jpg" width="337" height="250" alt="pyongyang">
+		</h3>
 		<p> Liste des Destinations :</p>
 		<template id="ListeDestinations">
-			<span> Voici une {{new Destination}} </span>
+			<span> Voici une {{new Destination}} pour {{prix}} par nuit</span>
 		</template>					
 	</body>
 </html>
