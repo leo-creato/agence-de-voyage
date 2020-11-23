@@ -1,20 +1,21 @@
-//Constructeur de la classe
+//Constructeur de la classe pour les destinations
 
 class Destination{
-    constructor(v,i,pr) { 
+    constructor(v,i,pr,idd) { 
         this._ville=v;
         this._image=i;
         this._prix=pr;
+        this._idd = idd;
     }
 }
 // Tableau de Destination
 let taDestination = [
-    new Destination("Caracas"," ../","50"),
-    new Destination("Pyongyang","../","500"),
-    new Destination("Damas","../","100"),
-    new Destination("Perth","../","700"),
-    new Destination("Acapulco","../","650"),
-    new Destination("Damas","../","300")
+    new Destination("Caracas","caracas.jpg",50,1),
+    new Destination("Pyongyang","pyongyang.jpg",500,2),
+    new Destination("Damas","damas.jpg",100,3),
+    new Destination("Perth","perth.jpg",700,4),
+    new Destination("Acapulco","acapulco.jpg",650,5),
+    new Destination("Antigua","antigua.jpg",300,6)
 ]
 
 //Formulaire
