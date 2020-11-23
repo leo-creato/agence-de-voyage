@@ -2,9 +2,9 @@
 
 class Destination{
     constructor(v,i,pr) { 
-        this._ville=v;
-        this._image=i;
-        this._prix=pr;
+        this.ville=v;
+        this.image=i;
+        this.prix=pr;
     }
 }
 // Tableau de Destination

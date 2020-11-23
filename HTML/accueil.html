@@ -4,6 +4,7 @@
 		<meta charset="UTF-8">
 		<title>TTV</title>
 		<script src='../js/destination.js'>  </script>
+		<script src='../js/template.js'></script>
 	</head>
 
 	<body>
@@ -17,21 +18,9 @@
         	Date d'arrivée:* 
 			<input type="date"/><br>
 		</fieldset>
-			<h2>Destinations:</h2>
-			<p>Caracas</p>
-			<a href="../HTML/caracas.html">voir offre caracas maracas</a>	
-			<p>Pyongyang</p>
-			<a href="../HTML/pyongyang.html">voir offre pyongyang</a>
-			<p>damas</p>
-			<a href="../HTML/damas.html">voir offre damas</a>
-
-			<h3>informations:</h3>
-			<a href="../HTML/contact.html">voir contacts de l'entreprise</a><br><br>
-			<a href="../HTML/panier.html">voir votre panier</a>
-			
-
-
-				
+		<p> Liste des Destinations :</p>
+		<template id="ListeDestinations">
+			<span> Voici une {{new Destination}} </span>
+		</template>					
 	</body>
-
 </html>
