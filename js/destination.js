@@ -1,6 +1,6 @@
 //Constructeur de la classe
 
-class Destinations{
+class Destination{
     constructor(v,i,pr) { 
         this._ville=v;
         this._image=i;
@@ -8,12 +8,14 @@ class Destinations{
     }
 }
 // Tableau de Destination
-var Caracas = new Destinations("Caracas"," ../","50")
-var Pyongyang = new Destinations("Pyongyang","../","500")
-var Damas = new Destinations("Damas","../","100")
-var Perth = new Destinations("Perth","../","700")
-var Acapulco = new Destinations("Acapulco","../","650")
-var Antigua = new Destinations("Damas","../","300")
+let taDestination = [
+    new Destination("Caracas"," ../","50"),
+    new Destination("Pyongyang","../","500"),
+    new Destination("Damas","../","100"),
+    new Destination("Perth","../","700"),
+    new Destination("Acapulco","../","650"),
+    new Destination("Damas","../","300")
+]
 
 //Formulaire
 
