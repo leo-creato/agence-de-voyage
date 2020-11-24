@@ -19,7 +19,19 @@
 			<a href="../HTML/accueil.html" class="active">Accueil</a>
 			<a href="../HTML/panier.html" class="active">Panier</a>
 			<a href="../HTML/contact.html" class="active">Contact</a>
-			</nav>
+		<!--rechercher qqch dans la barre de navigation-->
+			Rechercher :
+    		<input type="search" name="recherche"> <br>
+			</nav><br>
+
+		<!--Connexion compte client-->
+			<div class="login-container">
+				<form action="../js/template.js" method="post">
+				  <input type="text"  name="nom" placeholder="Nom d'utilisateur" required="required">
+				  <input type="text" name="mdp" placeholder="Mot de passe" required="required">
+				  <button type="submit">Connexion</button>
+				</form>
+			  </div>
 
 		<!--Filtrage avec la date-->
 			<fieldset>
