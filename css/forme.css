@@ -37,7 +37,7 @@ body {  /* Traitement de ce qu'il y a dansa le body */
    background-repeat: no-repeat;
    background-position: center;
 }
-   div.gallery {
+   div.gallery { /* Traitement des images */
     margin: 5px;
     border: 1px solid #ccc;
     float: left;
@@ -57,19 +57,19 @@ body {  /* Traitement de ce qu'il y a dansa le body */
     padding: 15px;
     text-align: center;
   }
-
+ /* à terminer *
 h2 {
     text-align: center;
 }
 
-img {   /* effet sur les images*/
+img {   /* effet sur les images
     opacity: 0.5;
   }
   
   img:hover {
     opacity: 1.0;
   }
-  
+
 #conteneur
 h3 {
     
