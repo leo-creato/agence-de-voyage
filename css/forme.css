@@ -31,16 +31,50 @@ a:hover { /*Effet quand on met notre souris une accueil par exemple */
     background-color: black;
     
 }
-body {
-   background-color: skyblue; /* couleur de fond*/
+body {  /* Traitement de ce qu'il y a dansa le body */
+   background-color: skyblue;  
+   background-image: url(../Image/avion2.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+}
+   div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+  }
   
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+
 h2 {
     text-align: center;
 }
+
+img {   /* effet sur les images*/
+    opacity: 0.5;
+  }
+  
+  img:hover {
+    opacity: 1.0;
+  }
+  
 #conteneur
 h3 {
+    
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
+
