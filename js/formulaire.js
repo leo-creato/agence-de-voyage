@@ -30,7 +30,7 @@ class formulaire{
 
     document.getElementById("bPrix").addEventListener("click", afficherprix(100,2,1,1,1,4));
     function afficherprix(pPrix,pAdultes,pEnfants,pAnimaux,pPtitDej,pNuit) {
-        console.log("Toto")
+        console.log("")
         let PrixTotal=(pPrix*pAdultes +(4/10)*pPrix*pEnfants)*pNuit
         if (pAnimaux==1){
             PrixTotal+=10*pNuit

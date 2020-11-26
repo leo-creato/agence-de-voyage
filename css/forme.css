@@ -1,38 +1,39 @@
 .bande{
-    background-color: black ;
+    background-color: royalblue; /*couleur de la bande */
     text-align: center;
 }
+
 h1 {
-    color: black;
+    color: black;  /* A propos du titre */
     text-align:center
 }
-P {
-    font-style: italic;
+
+P { 
+    font-style: italic;/* A proposr de la phrae du dessous */
     color: black;
     text-align:center
-}
+    
+    }
 .bande a {
     display: inline-block;
-    background-color: red; /*couleur de fond */
-    color: white; /*couleur du text de la page */
+    background-color:dodgerblue; /*couleur de fond des blocs */
+    color: black; /*couleur du text de la page */
     text-align: center;
-    padding: 15px 15px;
+    padding: 20px 20px;
     text-decoration: lawngreen;
 }
 
-a:hover {
-    background-color: darkorange;
+a:hover { /*Effet quand on met notre souris une accueil par exemple */
+    background-color: royalblue;
 }
 
 .active {
     background-color: black;
+    
 }
 body {
-   /* background-image: url(""");
-    background-position: top right;
-    background-repeat: no-repeat;
-    background-attachment:fixed;*/
-}
+   background-color: skyblue; /* couleur de fond*/
+  
 h2 {
     text-align: center;
 }
