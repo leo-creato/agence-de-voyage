@@ -2,18 +2,18 @@
     background-color: royalblue; /*couleur de la bande */
     text-align: center;
 }
-
+/* A propos du titre */
 h1 {
-    color: black;  /* A propos du titre */
+    color: black;  
     text-align:center
 }
 
-P { 
-    font-style: italic;/* A proposr de la phrae du dessous */
-    color: black;
-    text-align:center
-    
-    }
+/* A propos de la phrae du dessous */
+P {
+   font-style: italic;
+  color: black;
+  text-align:center
+}
 .bande a {
     display: inline-block;
     background-color:dodgerblue; /*couleur de fond des blocs */
@@ -22,59 +22,52 @@ P {
     padding: 20px 20px;
     text-decoration: lawngreen;
 }
-
-a:hover { /*Effet quand on met notre souris une accueil par exemple */
+/*Effet quand on met notre souris une accueil par exemple */
+a:hover { 
     background-color: royalblue;
 }
-
-.active {
-    background-color: black;
     
+/* Traitement de ce qu'il y a dansa le body */
+body {   
+   background-image: url(../Image/ciel.jpg);
+   background-attachment: fixed; 
 }
-body {  /* Traitement de ce qu'il y a dansa le body */
-   background-color: skyblue;  
-   background-image: url(../Image/avion2.jpg);
-   background-repeat: no-repeat;
-   background-position: center;
-}
-   div.gallery { /* Traitement des images */
-    margin: 5px;
-    border: 1px solid #ccc;
+/* Traitement des images */
+   div.gallery { 
+    margin: 10px; /* distance entre les photos*/
+    border: 5px solid #ccc; /*bordure*/
     float: left;
-    width: 180px;
+    width: 670px;
   }
   
   div.gallery:hover {
     border: 1px solid #777;
   }
   
-  div.gallery img {
+  div.gallery img { /*Traitement des images */
     width: 100%;
     height: auto;
   }
   
-  div.desc {
-    padding: 15px;
+  div.desc { /*cadre en dessous de l'image */
+    padding: 5px;
     text-align: center;
   }
- /* à terminer *
-h2 {
-    text-align: center;
+
+/*effet sur les images */
+img {    
+    opacity: 0.5;
+}
+  
+img:hover {
+    opacity: 1.0;
 }
 
-img {   /* effet sur les images
-    opacity: 0.5;
-  }
-  
-  img:hover {
-    opacity: 1.0;
-  }
-
 #conteneur
-h3 {
-    
+{
     display: flex;
     justify-content: center;
     align-items: center;
+    align-content:space-around;
+    flex-wrap: wrap;
 }
-
