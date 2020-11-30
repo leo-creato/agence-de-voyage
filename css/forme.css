@@ -71,3 +71,12 @@ img:hover {
     align-content:space-around;
     flex-wrap: wrap;
 }
+
+/* Pied de page */
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  background-color: royalblue;
+  color: #fff;
+}
