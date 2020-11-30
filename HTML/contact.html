@@ -2,19 +2,31 @@
 <html lang="fr">
 	<head>
 		<meta charset="UTF-8">
-		<title>TTV</title>
+        <title>TTV</title>
+        <link rel="stylesheet" href="../css/cssFormulaire.css">
 
-    </head>
+	</head>
     
     <body>
-        <h1>TUK TUK voyage</h1>
-        <p><img src="../Image/condition.jpg" width="500" height="300" alt="Poutine"></p>
+    <h1>A propos & Contact </h1>
+        <p>Bienvenu sur TUK-TUK Voyage, voici la page d'information de notre site</p>
+        
+    <!--Barre d'outil du site-->
+    <nav class="bande">
+        <a href="../HTML/accueil.html" class="active">Accueil</a>
+        <a href="../HTML/panier.html" class="active">Panier</a>
+        <a href="../HTML/contact.html" class="active">A propos</a>
+    
+        Rechercher :
+        <input type="search" name="recherche">
+        </nav>
+    
+        <p><img src="../Image/condition.jpg" width="500" height="400" alt="Condition"></p>
 
-            <h2>informations:</h2>
-                <p>mail:tukTUKveutvotreargent@jaimelargent.fr</p>
-                <p>numero de telephone : 06 06 06 06 06</p>
-                <a href="../HTML/condition.html">conditions d'utilisations</a>
-
-
-
+        <fieldset>
+            <legend>Information</legend>
+                <p>Adresse: 3 rue victor grignard, 69100 Villeurbanne</p>
+                <p>mail:tukTUKveutvotreargent@jaimelargent.fr --><a href="mailto:tukTUKveutvotreargent@jaimelargent.fr?subject=Demande%20de%20renseignement&body=Bonjour,%20je%20souhaiterais%20obtenir%20des%20renseignements%20sur">Demande de renseignements</a></p> <!-- Decription du mail (objet et corps)-->
+                <p>numero de telephone : 0606060606 --><a href="tel:0606060606">Appelez-nous !</a></p>
+        </fieldset>
     </body>

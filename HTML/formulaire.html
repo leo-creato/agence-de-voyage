@@ -2,13 +2,24 @@
 <html lang="fr">
 	<head>
 		<meta charset="UTF-8">
-        <title>TUK TUK voyage</title>
+        <title>TTV</title>
         <script src="/js/destination.js"></script>
+        <link rel="stylesheet" href="../css/cssFormulaire.css">
 
 	</head>
 
 	<body>
-        <form action="/accueil.html" method="GET">
+        <!--Barre d'outil du site-->
+    <nav class="bande">
+    <a href="../HTML/accueil.html" class="active">Accueil</a>
+    <a href="../HTML/panier.html" class="active">Panier</a>
+    <a href="../HTML/contact.html" class="active">A propos</a>
+
+    Rechercher :
+    <input type="search" name="recherche">
+    </nav>
+        
+        <form action="../HTML/accueil.html" method="GET">
             <fieldset>
                 <legend>Identité</legend>
                 Prénom :*<br>
@@ -19,6 +30,7 @@
                 <input type="radio" name="sexe" value="Homme" checked> Homme<br>
                 <input type="radio" name="sexe" value="Femme" checked> Femme<br><br>
             </fieldset><br> 
+
             <fieldset>
                 <legend>Informations</legend>
                 Adresse mail:*<br>
@@ -36,7 +48,7 @@
                     <option value="5 adultes">5</option>
                     <option value="6 adultes">6</option>
                 </select><br>
-                Nombre d'enfant:*<br>
+                Nombre d'enfant (-12ans):*<br>
                 <select name="Nombre d'enfant(s)">
                     <option value="1 enfant">1</option>
                     <option value="2 enfants">2</option>
@@ -58,10 +70,15 @@
                 <input type="radio" name="Ptit dej" value="OUI" checked>OUI
                 <input type="radio" name="Ptit dej" value="NON" checked> NON<br>
                 Les champs avec un * sont obligatoires à remplir
-            </fieldset><br>    
+            </fieldset><br>  
+
+            <fieldset>
+                <legend>Prix</legend>
+                <button id="bPrix"> Afficher le prix </button>
+                <p id="zoneprix">0</p>
+            </fieldset>  
+
             <input type="submit" value="Enregistrer">
          </form>
-        <button id="bPrix"> Afficher le prix </button>
-        <p id="zoneprix">0</p>
     </body>
 </html>
