@@ -16,6 +16,8 @@ for (const d of Destinations ) {
         document.body.appendChild(clone);
 }
 
+// Page de Réservation
+let sejour_id = new URLSearchParams(window.location.search).get("id")
 
 
 // Stockage des donées pour compte(s) utilisateur

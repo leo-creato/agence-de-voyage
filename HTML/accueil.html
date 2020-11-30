@@ -4,8 +4,6 @@
 	<meta charset="UTF-8">
 	<!--Affichage barre de recherche--> 
 	<title>TTV</title> 
-	<script src='../js/destination.js'>  </script>
-	<script src='../js/template.js'></script>
 	<link rel="stylesheet" href="../css/forme.css">
 	</head>
 
@@ -45,47 +43,52 @@
 
 
 	<!--Les Destinations-->
-		<p> Liste des Destinations :</p>
-	<template id="ListeDestinations">
-		<span> Voici une {{new Destination}} pour {{prix}} par nuit</span>
-	</template>	
-
+	<p> Liste des Destinations :</p>
 	<div id="conteneur">
 		<div class="gallery">
 			<a target="_blank" href="../Image/caracas.jpg">
-			<a href="réservation.html"><img src="../Image/caracas.jpg"></a>
-			<div class="desc">Caracas:  A partir de € par nuit et par adulte</div>
+			<a href="../HTML/réservation.html?id=1"><img src="../Image/caracas.jpg"></a>
+			<div class="desc">Caracas:  A partir de 50€ par nuit et par adulte</div>
 		</div>
 		
 		<div class="gallery">
 			<a target="_blank" href="../Image/damas.jpg">
-			<a href="../HTML/réservation.html"><img src="../Image/damas.jpg"></a>
-			<div class="desc">Damas: A partir de € par nuitet par adulte</div>
+			<a href="../HTML/réservation.html?id=2"><img src="../Image/damas.jpg"></a>
+			<div class="desc">Damas: A partir de 100€ par nuitet par adulte</div>
 		</div>
 		
 		<div class="gallery">
 			<a target="_blank" href="../Image/acapulco.jpg">
-			<a href="réservation.html"><img src="../Image/acapulco.jpg"></a>
-			<div class="desc">Acapulco: A partir de € par nuit et par adulte</div>
+			<a href="../HTML/réservation.html?id=3"><img src="../Image/acapulco.jpg"></a>
+			<div class="desc">Acapulco: A partir de 650€ par nuit et par adulte</div>
 		</div>
 		
 		<div class="gallery">
 			<a target="_blank" href="../Image/pyongyang.jpg">
-			<a href="réservation.html"><img src="../Image/pyongyang.jpg"></a>
-			<div class="desc">Pyongyang: A partir de € par nuit et par adulte</div>
+			<a href="../HTML/réservation.html?id=4"><img src="../Image/pyongyang.jpg"></a>
+			<div class="desc">Pyongyang: A partir de 500€ par nuit et par adulte</div>
 		</div>
 		<div class="gallery">
 			<a target="_blank" href="../Image/perth.jpg">
-			<a href="réservation.html"><img src="../Image/perth.jpg"></a>
-			<div class="desc">Perth: A partir de € par nuit et par adulte</div>
+			<a href="../HTML/réservation.html?id=5"><img src="../Image/perth.jpg"></a>
+			<div class="desc">Perth: A partir de 700€ par nuit et par adulte</div>
 		</div>
 		<div class="gallery">
 			<a target="_blank" href="../Image/antigua.jpg">
-			<a href="réservation.html"><img src="../Image/antigua.jpg"></a>
-		<div class="desc">Antigua: A partir de € par nuit et par adulte</div>
+			<a href="../HTML/réservation.html?id=6"><img src="../Image/antigua.jpg"></a>
+		<div class="desc">Antigua: A partir de 300€ par nuit et par adulte</div>
 		</div>
-	</div>				
+	</div>
+
+	<!--Stockage de donnée avec js-->
+	<template id="ListeDestinations">
+		<span> Voici une {{new Destination}} pour {{prix}} avec l'{{image}} et l'{{idd}}par nuit</span>
+	</template>	
+	<script src='../js/destination.js'></script>
+	<script src='../js/template.js'></script>
 	</body>
+
+	<!--Bas de page-->
 	<footer>
 		<fieldset>
 			<legend>Résaux</legend>

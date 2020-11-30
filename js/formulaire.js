@@ -40,3 +40,23 @@ class formulaire{
         }
     }
         document.getElementById("zoneprix").innerHTML = PrixTotal + "Euros"
+
+//
+let.btnEnregistrermesinformations = document.querySelector("button");
+console.log(btnEnregistrermesinformations);
+
+btnEnregistrermesinformations.addEventListener("click", () => {
+    //récupérer les données de mon formulaire
+
+    let genre = document.querySelectorAll("input[name = 'genre']");
+
+    for (i = 0; i< genre.length; i++) {
+        if (genre[i].checked === true){
+        leGenre = genre[i].value;
+        }
+    }
+
+    //stocker les saisie
+    localStorage.setItem("lastname", document.querySelector("#lastname").value)
+    console.log(genre);
+})

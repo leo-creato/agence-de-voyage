@@ -23,12 +23,12 @@
             <fieldset>
                 <legend>Identité</legend>
                 Prénom :*<br>
-                <input type="text" name="firstname" value=""><br>
+                <input type="text" name="firstname" id="firstname" value=""><br>
                 Nom :*<br>
-                <input type="text" name="lastname" value=""><br><br>
+                <input type="text" name="lastname" id="lastname" value=""><br><br>
                 Sexe :*<br>
-                <input type="radio" name="sexe" value="Homme" checked> Homme<br>
-                <input type="radio" name="sexe" value="Femme" checked> Femme<br><br>
+                <input type="radio" name="sexe" id="Homme"  value="Homme" checked> Homme<br>
+                <input type="radio" name="sexe" id="Femme"value="Femme" checked> Femme<br><br>
             </fieldset><br> 
 
             <fieldset>
@@ -78,8 +78,8 @@
                 <p id="zoneprix">0</p>
             </fieldset>  
 
-            <input type="submit" value="Enregistrer">
+            <button> Enregistrer mes informations</button>
          </form>
-         
+        <script src="/js/formulaire.js"></script>     
     </body>
 </html>
