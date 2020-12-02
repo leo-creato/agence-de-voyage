@@ -18,7 +18,7 @@
     <input type="search" name="recherche">
     </nav>
         
-        <form action="" method="GET">
+        <form method="GET">
             <fieldset>
                 <legend>Identité</legend>
 
@@ -27,6 +27,8 @@
 
                 Nom :*<br>
                 <input type="text" name="lastname" id="lastname" value=""><br><br>
+            </fieldset>
+
             <fieldset>
                 <legend>Informations</legend>
 
@@ -46,10 +48,10 @@
                 <input type="number" name="enfant" id="enfant"><br>
 
                 Choisissez une date de départ:* 
-                <input type="date" name="week_year" id="date_depart"><br>
+                <input type="week" name="week_year" id="date_depart"><br>
 
                 Choisissez une date d'arrivée:* 
-                <input type="date" name="week_year" id="date_arrivee"><br>
+                <input type="week" name="week_year" id="date_arrivee"><br>
 
                 Animal:*<br>
                 <textarea id="animaux">Indiquez le type d'animal ainsi que le nombre si vous comptez voyager avec des animaux:
@@ -61,29 +63,31 @@
 
                 Les champs avec un * sont obligatoires à remplir
             </fieldset><br>  
-
+        </form>
             <!--<fieldset>
                 <legend>Prix</legend>
                 <button id="bPrix"> Afficher le prix </button>
                 <p id="zoneprix">0</p>
             </fieldset>  -->
 
-            <button> Enregistrer mes informations</button>
+            <a href="../HTML/Recapitulatif.html"> <button> Enregistrer mes informations</button></a> 
 
-            <h1>Voici vos informations</h1>
-            <p>Votre Nom:<span id="LeNom"></span></p>     
-            <p>Votre Prénom:<span id="LePrenom"></span></p>
-            <p>Votre Genre:<span id="LeGenre"></span></p>
-            <p>Votre Adresse mail:<span id="AdresseMail"></span></p>
-            <p>Votre Adresse:<span id="Adresse"></span></p>
-            <p>Votre Numéro de téléphone:<span id="NumTelephone"></span></p>    
-            <p>Voici le nombre d'adulte(s) participant au voyage:<span id="NbrAdulte"></span></p>
-            <p>Votre le nombre d'enfant(s) participant au voyage:<span id="NbrEnfant"></span></p>
-            <p>Votre date de départ:<span id="DateDepart"></span></p>
-            <p>Votre date de retour:<span id="DateRetour"></span></p>    
-            <p>Votre animal de companie ou vos animaux:<span id="Animal"></span></p> 
-            <p>Option petit déjeuner ?:<span id="Ptit_Dej"></span></p>
-         </form>
-        <script src="../js/StockageFormulaire.js"></script>     
+            <fieldset>
+                <legend>Mes Informations</legend>
+                <p><strong>Vos informations sont-elles correctes ?</strong></p>
+                <p>Votre Nom:<span id="LeNom"></span></p>     
+                <p>Votre Prénom:<span id="LePrenom"></span></p>
+                <p>Votre Adresse mail:<span id="AdresseMail"></span></p>
+                <p>Votre Adresse:<span id="Adresse"></span></p>
+                <p>Votre Numéro de téléphone:<span id="NumTelephone"></span></p>    
+                <p>Voici le nombre d'adulte(s) participant au voyage:<span id="NbrAdulte"></span></p>
+                <p>Votre le nombre d'enfant(s) participant au voyage:<span id="NbrEnfant"></span></p>
+                <p>Votre date de départ:<span id="DateDepart"></span></p>
+                <p>Votre date de retour:<span id="DateRetour"></span></p>    
+                <p>Votre animal de companie ou vos animaux:<span id="Animal"></span></p> 
+                <p>Option petit déjeuner ?:<span id="Ptit_Dej"></span></p>
+            </fieldset>
+        <script src="../js/StockageFormulaire.js"></script>
+        <a href="../HTML/formulaire.html"> <input type="button" name="Réserver "value="Réserver"/></a>   
     </body>
 </html>

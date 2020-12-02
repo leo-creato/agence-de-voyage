@@ -1,25 +1,42 @@
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
-	<meta charset="UTF-8">
-	<!--Affichage barre de recherche--> 
-    <title>TTV</title>
-    <link rel="stylesheet" href="../css/cssRéservation.css">
-</head>
+        <meta charset="UTF-8">
+        <!--Affichage barre de recherche--> 
+        <title>TTV</title>
+        <link rel="stylesheet" href="../css/cssRéservation.css">
+    </head>
 
-<!--Barre d'outil du site-->
-<body>
-    <nav class="bande">
-    <a href="../HTML/accueil.html" class="active">Accueil</a>
-    <a href="../HTML/panier.html" class="active">Panier</a>
-    <a href="../HTML/contact.html" class="active">A propos</a>
+    <!--Barre d'outil du site-->
+    <body>
+        <nav class="bande">
+        <a href="../HTML/accueil.html" class="active">Accueil</a>
+        <a href="../HTML/panier.html" class="active">Panier</a>
+        <a href="../HTML/contact.html" class="active">A propos</a>
 
-    Rechercher :
-    <input type="search" name="recherche">
-    </nav>
-        
-    <h1>Voici votre réservation </h1>
-        <p>vérifier vos informations puis cliquer sur terminer une fois que tout est bon:</p>
+        Rechercher :
+        <input type="search" name="recherche">
+        </nav>
+            
+        <h1>Voici votre réservation </h1>
+            <p>vérifier vos informations puis cliquer sur terminer une fois que tout est bon:</p>
 
-     <input type="button" name="Terminer"value="Terminer"/></a>
-</body>
+        <fieldset>
+                <legend>Mes Informations</legend>
+                <p><strong>Vos informations sont-elles correctes ?</strong></p>
+                <p>Votre Nom:<span id="LeNom"></span></p>     
+                <p>Votre Prénom:<span id="LePrenom"></span></p>
+                <p>Votre Adresse mail:<span id="AdresseMail"></span></p>
+                <p>Votre Adresse:<span id="Adresse"></span></p>
+                <p>Votre Numéro de téléphone:<span id="NumTelephone"></span></p>    
+                <p>Voici le nombre d'adulte(s) participant au voyage:<span id="NbrAdulte"></span></p>
+                <p>Votre le nombre d'enfant(s) participant au voyage:<span id="NbrEnfant"></span></p>
+                <p>Votre date de départ:<span id="DateDepart"></span></p>
+                <p>Votre date de retour:<span id="DateRetour"></span></p>    
+                <p>Votre animal de companie ou vos animaux:<span id="Animal"></span></p> 
+                <p>Option petit déjeuner ?:<span id="Ptit_Dej"></span></p>
+            </fieldset>
+            <input type="button" name="Terminer" value="Terminer"/>
+        <script src="../js/StockageFormulaire.js"></script>
+    </body>
+</html>

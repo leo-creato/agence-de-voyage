@@ -8,92 +8,93 @@
 	</head>
 
 	<body>
-	<!--Haut de la page d'Accueil-->
-	<h1>TUK-TUK Voyage</h1>
-		<p>Bienvenu sur TUK-TUK Voyage, des voyages dans des destinations originales</p>
+		<!--Haut de la page d'Accueil-->
+		<h1>TUK-TUK Voyage</h1>
+			<p>Bienvenu sur TUK-TUK Voyage, des voyages dans des destinations originales</p>
 
-	<!--Barre d'outil du site-->
-		<nav class="bande">
-		<a href="../HTML/accueil.html" class="active">Accueil</a>
-		<a href="../HTML/panier.html" class="active">Panier</a>
-		<a href="../HTML/contact.html" class="active">A propos</a>
-		
-	<!--rechercher qqch dans la barre de navigation-->
-		Rechercher :
-		<input type="search" name="recherche">
-	</nav><br>
+		<!--Barre d'outil du site-->
+			<nav class="bande">
+			<a href="../HTML/accueil.html" class="active">Accueil</a>
+			<a href="../HTML/panier.html" class="active">Panier</a>
+			<a href="../HTML/contact.html" class="active">A propos</a>
+			
+		<!--rechercher qqch dans la barre de navigation-->
+			Rechercher :
+			<input type="search" name="recherche">
+		</nav><br>
 
-	<!--Connexion compte client-->
-	<div class="login-container">
-		<form action="../js/template.js" method="post">
-			<input type="text"  name="nom" placeholder="Nom d'utilisateur" required="required">
-			<input type="text" name="mdp" placeholder="Mot de passe" required="required">
-			<button type="submit">Connexion</button>
-		</form>
-		</div>
+		<!--Connexion compte client-->
+		<div class="login-container">
+			<form action="../js/template.js" method="post">
+				<input type="text"  name="nom" placeholder="Nom d'utilisateur" required="required">
+				<input type="text" name="mdp" placeholder="Mot de passe" required="required">
+				<button type="submit">Connexion</button>
+			</form>
+			</div>
 
-	<!--Filtrage avec la date-->
-		<fieldset>
-			<legend>Filtrage</legend>
+		<!--Filtrage avec la date-->
+			<fieldset>
+				<legend>Filtrage</legend>
 				Date de départ:* 
-			<input type="date"/>
-			Date d'arrivée:* 
-			<input type="date"/><br>
-		</fieldset>
+				<input type="week" name="week_year">
+				Date d'arrivée:* 
+				<input type="week"name="week_year"><br>
+			</fieldset>
 
 
-	<!--Les Destinations-->
-	<p> Liste des Destinations :</p>
-	<div id="conteneur">
-		<div class="gallery">
-			<a target="_blank" href="../Image/caracas.jpg">
-			<a href="../HTML/réservation.html?id=1"><img src="../Image/caracas.jpg"></a>
-			<div class="desc">Caracas:  A partir de 50€ par nuit et par adulte</div>
+		<!--Les Destinations-->
+		<p> Liste des Destinations :</p>
+		<div id="conteneur">
+			<div class="gallery">
+				<a target="_blank" href="../Image/caracas.jpg">
+				<a href="../HTML/réservation.html?id=1"><img src="../Image/caracas.jpg"></a>
+				<div class="desc">Caracas:  A partir de 50€ par nuit et par adulte</div>
+			</div>
+			
+			<div class="gallery">
+				<a target="_blank" href="../Image/damas.jpg">
+				<a href="../HTML/réservation.html?id=2"><img src="../Image/damas.jpg"></a>
+				<div class="desc">Damas: A partir de 100€ par nuitet par adulte</div>
+			</div>
+			
+			<div class="gallery">
+				<a target="_blank" href="../Image/acapulco.jpg">
+				<a href="../HTML/réservation.html?id=3"><img src="../Image/acapulco.jpg"></a>
+				<div class="desc">Acapulco: A partir de 650€ par nuit et par adulte</div>
+			</div>
+			
+			<div class="gallery">
+				<a target="_blank" href="../Image/pyongyang.jpg">
+				<a href="../HTML/réservation.html?id=4"><img src="../Image/pyongyang.jpg"></a>
+				<div class="desc">Pyongyang: A partir de 500€ par nuit et par adulte</div>
+			</div>
+			<div class="gallery">
+				<a target="_blank" href="../Image/perth.jpg">
+				<a href="../HTML/réservation.html?id=5"><img src="../Image/perth.jpg"></a>
+				<div class="desc">Perth: A partir de 700€ par nuit et par adulte</div>
+			</div>
+			<div class="gallery">
+				<a target="_blank" href="../Image/antigua.jpg">
+				<a href="../HTML/réservation.html?id=6"><img src="../Image/antigua.jpg"></a>
+			<div class="desc">Antigua: A partir de 300€ par nuit et par adulte</div>
+			</div>
 		</div>
-		
-		<div class="gallery">
-			<a target="_blank" href="../Image/damas.jpg">
-			<a href="../HTML/réservation.html?id=2"><img src="../Image/damas.jpg"></a>
-			<div class="desc">Damas: A partir de 100€ par nuitet par adulte</div>
-		</div>
-		
-		<div class="gallery">
-			<a target="_blank" href="../Image/acapulco.jpg">
-			<a href="../HTML/réservation.html?id=3"><img src="../Image/acapulco.jpg"></a>
-			<div class="desc">Acapulco: A partir de 650€ par nuit et par adulte</div>
-		</div>
-		
-		<div class="gallery">
-			<a target="_blank" href="../Image/pyongyang.jpg">
-			<a href="../HTML/réservation.html?id=4"><img src="../Image/pyongyang.jpg"></a>
-			<div class="desc">Pyongyang: A partir de 500€ par nuit et par adulte</div>
-		</div>
-		<div class="gallery">
-			<a target="_blank" href="../Image/perth.jpg">
-			<a href="../HTML/réservation.html?id=5"><img src="../Image/perth.jpg"></a>
-			<div class="desc">Perth: A partir de 700€ par nuit et par adulte</div>
-		</div>
-		<div class="gallery">
-			<a target="_blank" href="../Image/antigua.jpg">
-			<a href="../HTML/réservation.html?id=6"><img src="../Image/antigua.jpg"></a>
-		<div class="desc">Antigua: A partir de 300€ par nuit et par adulte</div>
-		</div>
-	</div>
 
-	<!--Stockage de donnée avec js-->
-	<!--<template id="ListeDestinations">
-		<span> Voici une {{new Destination}} pour {{prix}} avec l'{{image}} et l'{{idd}}par nuit</span>
-	</template>	
-	<script src='../js/destination.js'></script>
-	<script src='../js/template.js'></script>-->
+		<!--Stockage de donnée avec js-->
+		<!--<template id="ListeDestinations">
+			<span> Voici une {{new Destination}} pour {{prix}} avec l'{{image}} et l'{{idd}}par nuit</span>
+		</template>	
+		<script src='../js/destination.js'></script>
+		<script src='../js/template.js'></script>-->
+
+		<footer>
+			<fieldset>
+				<legend>Résaux</legend>
+					<p>© 2020 TTV</p>
+					<a href="../Image/instagram.jpeg"></a>
+			</fieldset>
+		</footer>
 	</body>
 
 	<!--Bas de page-->
-	<footer>
-		<fieldset>
-			<legend>Résaux</legend>
-				<p>© 2020 TTV</p>
-				<a href="../Image/instagram.jpeg"></a>
-		</fieldset>
-	</footer>
 </html>
