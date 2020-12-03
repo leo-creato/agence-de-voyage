@@ -32,6 +32,11 @@ body {
    background-image: url(../Image/ciel.jpg);
    background-attachment: fixed;    
 }
-img {
-    border-radius: 50%;
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: royalblue;
+    color: #fff;
 }
