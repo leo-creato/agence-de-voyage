@@ -33,10 +33,20 @@ body {
    background-attachment: fixed; 
 }
 
+/* Pied de page */
 footer {
     display: flex;
     justify-content: center;
     padding: 5px;
     background-color: royalblue;
     color: #fff;
-  }
+}
+  
+/* bouton top */
+  
+#scrollUp{
+  position: fixed;
+  bottom : 10px;
+  right: -100px;
+  opacity: 0.5;
+}

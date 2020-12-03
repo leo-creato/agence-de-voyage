@@ -23,15 +23,6 @@
 			<input type="search" name="recherche">
 		</nav><br>
 
-		<!--Connexion compte client-->
-		<div class="login-container">
-			<form action="../js/template.js" method="post">
-				<input type="text"  name="nom" placeholder="Nom d'utilisateur" required="required">
-				<input type="text" name="mdp" placeholder="Mot de passe" required="required">
-				<button type="submit">Connexion</button>
-			</form>
-			</div>
-
 		<!--Filtrage avec la date-->
 			<fieldset>
 				<legend>Filtrage</legend>
@@ -46,24 +37,28 @@
 		<p> Liste des Destinations :</p>
 		<div id="conteneur">
 			<div class="gallery">
+				<div id="caracas" ></div>
 				<a target="_blank" href="../Image/caracas.jpg">
 				<a href="../HTML/réservation.html?id=1"><img src="../Image/caracas.jpg"></a>
 				<div class="desc">Caracas:  A partir de 50€ par nuit et par adulte</div>
 			</div>
 			
 			<div class="gallery">
+				<div id="damas" ></div>
 				<a target="_blank" href="../Image/damas.jpg">
 				<a href="../HTML/réservation.html?id=2"><img src="../Image/damas.jpg"></a>
 				<div class="desc">Damas: A partir de 100€ par nuitet par adulte</div>
 			</div>
 			
 			<div class="gallery">
+				<div id="acapulco"></div>
 				<a target="_blank" href="../Image/acapulco.jpg">
 				<a href="../HTML/réservation.html?id=3"><img src="../Image/acapulco.jpg"></a>
 				<div class="desc">Acapulco: A partir de 650€ par nuit et par adulte</div>
 			</div>
 			
 			<div class="gallery">
+				<div id="pyongyang"></div>
 				<a target="_blank" href="../Image/pyongyang.jpg">
 				<a href="../HTML/réservation.html?id=4"><img src="../Image/pyongyang.jpg"></a>
 				<div class="desc">Pyongyang: A partir de 500€ par nuit et par adulte</div>
@@ -87,14 +82,29 @@
 		<script src='../js/destination.js'></script>
 		<script src='../js/template.js'></script>-->
 
+		<!--Bas de page-->
 		<footer>
 			<fieldset>
 				<legend>Résaux</legend>
 					<p>© 2020 TTV</p>
-					<a href="../Image/instagram.jpeg"></a>
+					<p>Compte client</p>
+
+					<!--Connexion compte client-->
+					<div class="login-container">
+						<form action="../js/template.js" method="post">
+							<input type="text"  name="nom" placeholder="Nom d'utilisateur" required="required">
+							<input type="text" name="mdp" placeholder="Mot de passe" required="required">
+							<button type="submit">Connexion</button>
+						</form>
+						</div>
 			</fieldset>
 		</footer>
-	</body>
+		<script src="../js/meteo.js"></script>
+		<script src="../js/connexion.js"></script>
 
-	<!--Bas de page-->
+		<!-- Bouton pour retour vers le haut-->
+		<div id="scrollUp">
+			<a href="#top"><img src="../Image/bouton3.png"/></a>
+		</div>
+	</body>
 </html>
