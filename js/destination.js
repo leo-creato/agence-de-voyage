@@ -1,10 +1,10 @@
 // Classe de nos Destinations
 class Destination{
     constructor(ville,img,prix,id) { 
-        this._ville=ville;
-        this._img=img;
-        this._prix=prix;
-        this._id = id;
+        this.ville=ville;
+        this.img=img;
+        this.prix=prix;
+        this.id = id;
     }
 }
 // Tableau de Destination
@@ -29,25 +29,24 @@ function AfficherDesignTri(){
 
 function AfficherTri(){
     let lienimage = ''
-    let i
     if (document.getElementById('triage').value=='1'){
         let c=0
-        for(i of prixcroissant){
-            lienimage += '<a href=../HTML/réservation.html?id=' + i.id + '"><image onmouseover=flouimage(' + i.id + ');infoimage('+ c +') onmouseout=suppinfoimage(' + c +');enleveflouimage('+ i.id +') id=' + i.id + 'src=' + i.image + '>\n <span onmouseover=flouimage(' + i.id + ');infoimage(' + c + ') onmouseout=suppinfoimage(' + c +');enleveflouimage(' + i.id +') class=description">' + i.ville + '<br>' + i.prix +'€ par jour </span></a>'
+        for(let i of prixcroissant){
+            lienimage += '<a href=../HTML/réservation.html?id=' + i.id + '"><image onmouseover=flouimage(' + i.id + ');infoimage('+ c +') onmouseout=suppinfoimage(' + c +');enleveflouimage('+ i.id +') id=' + i.id + ' src= ' + i.img + '>\n <span onmouseover=flouimage(' + i.id + ');infoimage(' + c + ') onmouseout=suppinfoimage(' + c +');enleveflouimage(' + i.id +') class=description">' + i.ville + '<br>' + i.prix +'€ par jour </span></a>'
             c +=1
         }
         offre.innerHTML = lienimage
     }else if (document.getElementById('triage').value=='2'){
         let c=0
-        for(i of prixdecroissant){
-            lienimage += '<a href=../HTML/réservation.html?id=' + i.id + '"><image onmouseover=flouimage(' + i.id + ');infoimage('+ c +') onmouseout=suppinfoimage(' + c +');enleveflouimage('+ i.id +') id=' + i.id + 'src=' + i.image + '>\n <span onmouseover=flouimage(' + i.id + ');infoimage(' + c + ') onmouseout=suppinfoimage(' + c +');enleveflouimage(' + i.id +') class=description">' + i.ville + '<br>' + i.prix +'€ par jour </span></a>'
+        for(let i of prixdecroissant){
+            lienimage += '<a href=../HTML/réservation.html?id=' + i.id + '"><image onmouseover=flouimage(' + i.id + ');infoimage('+ c +') onmouseout=suppinfoimage(' + c +');enleveflouimage('+ i.id +') id=' + i.id + ' src= ' + i.img + '>\n <span onmouseover=flouimage(' + i.id + ');infoimage(' + c + ') onmouseout=suppinfoimage(' + c +');enleveflouimage(' + i.id +') class=description">' + i.ville + '<br>' + i.prix +'€ par jour </span></a>'
             c +=1
         }
         offre.innerHTML = lienimage
     }else if (document.getElementById('triage').value=='3'){
         let c=0
-        for(i of populaire){
-            lienimage += '<a href=../HTML/réservation.html?id=' + i.id + '"><image onmouseover=flouimage(' + i.id + ');infoimage('+ c +') onmouseout=suppinfoimage(' + c +');enleveflouimage('+ i.id +') id=' + i.id + 'src=' + i.image + '>\n <span onmouseover=flouimage(' + i.id + ');infoimage(' + c + ') onmouseout=suppinfoimage(' + c +');enleveflouimage(' + i.id +') class=description">' + i.ville + '<br>' + i.prix +'€ par jour </span></a>'
+        for(let i of populaire){
+            lienimage += '<a href=../HTML/réservation.html?id=' + i.id + '"><image onmouseover=flouimage(' + i.id + ');infoimage('+ c +') onmouseout=suppinfoimage(' + c +');enleveflouimage('+ i.id +') id=' + i.id + ' src= ' + i.img + '>\n <span onmouseover=flouimage(' + i.id + ');infoimage(' + c + ') onmouseout=suppinfoimage(' + c +');enleveflouimage(' + i.id +') class=description">' + i.ville + '<br>' + i.prix +'€ par jour </span></a>'
             c +=1
         }
         offre.innerHTML = lienimage
