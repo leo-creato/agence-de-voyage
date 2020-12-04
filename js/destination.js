@@ -15,39 +15,73 @@ let Perth = new Destination("Perth","../Image/perth.jpg",700,4);
 let Acapulco = new Destination("Acapulco","../Image/acapulco.jpg",650,5);
 let Antigua= new Destination("Antigua","../Image/antigua.jpg",300,6);
 
+let offre = document.getElementById('offre')
+let description = document.getElementsByClassName('description')
 
-affichageDest() { //méthode pour afficher les destinations sur notre page html
-    var ville = this._ville;
-    var img = document.createElement("img"); //on crée l'endroit où l'image de notre destination sera
-    var a = document.createElement("a"); //ancre pour le futur hyperlien
-    var h4 = document.createElement("p");
-    var block = document.getElementById(ville); //div où sera notre image
-    var p = document.createElement("p");
-    a.href=this._href + "?id=" + this._id; //on ajoute le lien vers notre page de réservation et on implémente l'id
-    img.id=this._imagelien; //on fixe un identifiant propre à la ville pour plus tard retrouver notre image
-    img.src = this._imagelien; //on donne le lien de notre image
-    var url = this._weather+'&units=metric&lang=fr'
-    fetch(url).then((response) =>  //utilisation de Fetch pour la température de la ville
-        response.json().then((data) => {
-            var temp = data.main.temp;
-            p.innerText= "Prix quotidien à partir de : " + this._prix + "$ par personne\n"+ "Température actuelle ressentie : " + String(temp) + "°C";       
-        })
-    )
-    block.appendChild(a); // on fixe notre arborescence : div > a + p > img + h4 
-    block.append(p);
-    a.appendChild(img);
-    a.appendChild(h4);
-    img.style.border="double"; //élément de décoration
-    h4.innerHTML=ville; //on écrit dans notre h4 le nom de la ville
-    h4.style.fontFamily="Georgia,serif";
-    h4.style.textAlign="center";
-    h4.style.fontSize="2em";
-    h4.style.margin="0% 0% 0% 0%";
-    p.style.textAlignLast="right";
-    p.style.marginRight="3%";
-    block.style.backgroundColor="white";
-    document.getElementById(ville).style.marginLeft="4%"; //marge pour l'esthétisme
-    document.getElementById(ville).style.marginRight="4%";
-    document.getElementById(ville).style.marginBottom="7%";
-    document.getElementById(ville).style.padding="3em";
+let prixcroissant = [Caracas,Damas,Antigua,Pyongyang,Acapulco,Perth];
+let prixdecroissant = [Perth,Acapulco,Pyongyang,Antigua,Damas,Caracas];
+let populaire = [Perth,Acapulco,Antigua,Damas,Caracas,Pyongyang];
+
+
+function AfficherDesignTri(){
+    document.getElementById('triage').style='display:inline'
+}
+
+function AfficherTri(){
+    let lienimage = ''
+    let i
+    if (document.getElementById('triage').value=='1'){
+        let c=0
+        for(i of prixcroissant){
+            lienimage += '<a href=../HTML/réservation.html?id=' + i.id + '"><image onmouseover=flouimage(' + i.id + ');infoimage('+ c +') onmouseout=suppinfoimage(' + c +');enleveflouimage('+ i.id +') id=' + i.id + 'src=' + i.image + '>\n <span onmouseover=flouimage(' + i.id + ');infoimage(' + c + ') onmouseout=suppinfoimage(' + c +');enleveflouimage(' + i.id +') class=description">' + i.ville + '<br>' + i.prix +'€ par jour </span></a>'
+            c +=1
+        }
+        offre.innerHTML = lienimage
+    }else if (document.getElementById('triage').value=='2'){
+        let c=0
+        for(i of prixdecroissant){
+            lienimage += '<a href=../HTML/réservation.html?id=' + i.id + '"><image onmouseover=flouimage(' + i.id + ');infoimage('+ c +') onmouseout=suppinfoimage(' + c +');enleveflouimage('+ i.id +') id=' + i.id + 'src=' + i.image + '>\n <span onmouseover=flouimage(' + i.id + ');infoimage(' + c + ') onmouseout=suppinfoimage(' + c +');enleveflouimage(' + i.id +') class=description">' + i.ville + '<br>' + i.prix +'€ par jour </span></a>'
+            c +=1
+        }
+        offre.innerHTML = lienimage
+    }else if (document.getElementById('triage').value=='3'){
+        let c=0
+        for(i of populaire){
+            lienimage += '<a href=../HTML/réservation.html?id=' + i.id + '"><image onmouseover=flouimage(' + i.id + ');infoimage('+ c +') onmouseout=suppinfoimage(' + c +');enleveflouimage('+ i.id +') id=' + i.id + 'src=' + i.image + '>\n <span onmouseover=flouimage(' + i.id + ');infoimage(' + c + ') onmouseout=suppinfoimage(' + c +');enleveflouimage(' + i.id +') class=description">' + i.ville + '<br>' + i.prix +'€ par jour </span></a>'
+            c +=1
+        }
+        offre.innerHTML = lienimage
+    }
+}
+
+AfficherTri()
+function infoimage(i){
+    description[i].style.opacity=1;
+    if ((i==0) || (i==2) || (i==3) || (i==6)){ // destination de la première colonne
+        description[i].style.left=0 +'%';
+    } 
+    if ((i==1) || (i==4) || (i==5)){ // destination de la deuxième colonne
+        description[i].style.left=50 +'%';
+    } 
+    if (i<3){ // 1ère ligne
+        description[i].style.top=33.3 +'%';
+    } 
+    if ((i>=3) & (i<6)){ // 2ème ligne
+        description[i].style.top=66.6 +'%';
+    } 
+    if (i<3){ // dernière ligne
+        description[i].style.top=90+'%';
+    }
+}
+
+function suppinfoimage(i){
+    description[i].style.opacity=0;
+}
+
+function flouimage(i){
+    document.getElementById(i).style.opacity=0.7;
+}
+
+function enleveflouimage(i){
+    document.getElementById(i).style.opacity=1;
 }
