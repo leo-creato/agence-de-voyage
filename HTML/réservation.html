@@ -1,50 +1,104 @@
 <!DOCTYPE html>
 <html lang="fr">
-	<head>
-	<meta charset="UTF-8">
-	<!--Affichage barre de recherche--> 
-    <title>TTV</title>
-    <link rel="stylesheet" href="../css/cssRéservation.css">
-</head>
+        <head>
+        <meta charset="UTF-8">
+        <!--Affichage barre de recherche--> 
+        <title>TTV</title>
+        <link rel="stylesheet" href="../css/cssRéservation.css">
+    </head>
 
-<!--Barre d'outil du site-->
-<body>
-    <nav class="bande">
-    <a href="../HTML/accueil.html" class="active">Accueil</a>
-    <a href="../HTML/panier.html" class="active">Panier</a>
-    <a href="../HTML/contact.html" class="active">A propos</a>
-    <input type="text" placeholder="Recherche ...">
+    <!--Barre d'outil du site-->
+    <body>
+        <nav class="bande">
+        <a href="../HTML/accueil.html" class="active">Accueil</a>
+        <a href="../HTML/panier.html" class="active">Panier</a>
+        <a href="../HTML/contact.html" class="active">A propos</a>
+        <input type="text" placeholder="Recherche ...">
+        </nav>   
 
-    Rechercher :
-    <input type="search" name="recherche">
-    </nav>
-        
-    <h1>Voici votre réservation </h1>
-        <p>pour réserver, il suffit de cliquer sur le bouton suivant:</p>
+        <h1>Voici la destination que vous avez sélectionné </h1>
+            <p>pour réserver, il suffit de compléter le formulaire suivant et enregistrer vos informations:</p>
 
-    <a href="../HTML/formulaire.html"> <button> Résever </button></a>
-    <script src='../js/destination.js'></script>
+        <form method="GET">
+            <fieldset>
+                <legend>Identité</legend>
 
-    <!-- Bouton pour retour vers le haut-->
-		<div id="scrollUp">
-			<a href="#top"><img src="../Image/bouton3.png"/></a>
-		</div>
-        
-    <footer>
-        <fieldset>
-            <legend>Résaux</legend>
-                <p>© 2020 TTV</p>
-        
-                <!--Connexion compte client-->
-                Compte client
-                <div class="login-container">
-                    <form action="../js/template.js" method="post">
-                        <input type="text"  name="nom" placeholder="Nom d'utilisateur" required="required">
-                        <input type="text" name="mdp" placeholder="Mot de passe" required="required">
-                        <button type="submit">Connexion</button>
-                    </form>
-                    </div>
-        </fieldset>
-    </footer>
+                Prénom :*<br>
+                <input type="text" name="firstname" id="firstname" value=""><br>
 
-</body>
+                Nom :*<br>
+                <input type="text" name="lastname" id="lastname" value=""><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Informations</legend>
+
+                Adresse mail:*<br>
+                <input type="text" name="adresse_mail" id="mail" value=""><br>
+
+                Numéro de téléphone:*<br>
+                <input type="text" name="telephone" id="telephone" value=""><br>
+
+                Adresse:<br>
+                <input type="text" name="adresse" id="adresse" value=""><br>
+
+                Nombre d'adulte:*<br>
+                <input type="number" name="adulte" id="adulte"><br>
+
+                Nombre d'enfant (-12ans):*<br>
+                <input type="number" name="enfant" id="enfant"><br>
+
+                Choisissez une date de départ:* 
+                <input type="week" name="week_year" id="date_depart"><br>
+
+                Choisissez une date d'arrivée:* 
+                <input type="week" name="week_year" id="date_arrivee"><br>
+
+                Animal:*<br>
+                <textarea id="animaux">Indiquez le type d'animal ainsi que le nombre si vous comptez voyager avec des animaux:
+                </textarea><br>
+
+                Petit déjeuner:*
+                <input type="radio" name="Ptit_dej" id="dejo" value="OUI" checked>OUI
+                <input type="radio" name="Ptit_dej" id="dejn" value="NON" checked> NON<br>
+
+                Les champs avec un * sont obligatoires à remplir
+            </fieldset><br>  
+        </form>
+            <!--<fieldset>
+                <legend>Prix</legend>
+                <button id="bPrix"> Afficher le prix </button>
+                <p id="zoneprix">0</p>
+            </fieldset>  -->
+
+            <a href="../HTML/Recapitulatif.html"> <button> Enregistrer mes informations</button></a> 
+
+        <script src="../js/StockageFormulaire.js"></script> 
+        <script src='../js/destination.js'></script>
+
+
+        <!-- Bouton pour retour vers le haut-->
+            <div id="scrollUp">
+                <a href="#top"><img src="../Image/bouton3.png"/></a>
+            </div>
+            
+        <footer>
+            <fieldset>
+                <legend>Résaux</legend>
+                    <p>© 2020 TTV</p>
+            
+                    <!--Connexion compte client-->
+                    Compte client
+                    <div class="login-container">
+                        <form action="../js/template.js" method="post">
+                            <input type="text"  name="nom" placeholder="Nom d'utilisateur" required="required">
+                            <input type="text" name="mdp" placeholder="Mot de passe" required="required">
+                            <button type="submit">Connexion</button>
+                        </form>
+                        </div>
+            </fieldset>
+        </footer>
+        <script src="../js/StockageFormulaire.js"></script> 
+        <script src='../js/destination.js'></script>
+    </body>
+</html>

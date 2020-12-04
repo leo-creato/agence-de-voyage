@@ -1,15 +1,17 @@
 const APIKEY = '8b0858cd9a4bd16d00cb60a9e87ee0ee';
 
-let url = 'https://api.openweathermap.org/data/2.5/weather?q='+Caracas+'&appid='+APIKEY+'&units=metric&lang=fr';
-''
+function meteo(ville){
+  let url = 'https://api.openweathermap.org/data/2.5/weather?q=' + ville+'&appid=' + APIKEY + '&units=metric&lang=fr';
+  fetch(url)
+    .then(function(resp) { return resp.json() }) //convertissement des donées en java
+    .then(function(data) {
+      offre.innerHTML +=data.main.temp
+    })
+} 
 
-fetch(url).then((response) =>
-  response.json().then((data) => {
-      console.log(data);
-      document.querySelector('#caracas').innerHTML = data.name;
-      document.querySelector('#temp').innerHTML = data.main.temp;
-      document.querySelector('#humidity').innerHTML = data.main.humidity + '%';
-
-
-  }
-);
+meteo('caracas')
+meteo('acapulco')
+//meteo('perth')
+//meteo('pyongyang')
+//meteo('damas')
+//meteo('antigua')
