@@ -8,12 +8,12 @@ class Destination{
     }
 }
 // Tableau de Destination
-let Caracas = new Destination("Caracas","../Image/caracas.jpg",50,1);
-let Pyongyang = new Destination("Pyongyang","../Image/pyongyang.jpg",500,2);
-let Damas = new Destination("Damas","../Image/damas.jpg",100,3);
-let Perth = new Destination("Perth","../Image/perth.jpg",700,4);
-let Acapulco = new Destination("Acapulco","../Image/acapulco.jpg",650,5);
-let Antigua= new Destination("Antigua","../Image/antigua.jpg",300,6);
+let Caracas = new Destination("Caracas","../Image/caracas.jpg",50,"1");
+let Pyongyang = new Destination("Pyongyang","../Image/pyongyang.jpg",500,"2");
+let Damas = new Destination("Damas","../Image/damas.jpg",100,"3");
+let Perth = new Destination("Perth","../Image/perth.jpg",700,"4");
+let Acapulco = new Destination("Acapulco","../Image/acapulco.jpg",650,"5");
+let Antigua= new Destination("Antigua","../Image/antigua.jpg",300,"6");
 
 let offre = document.getElementById('offre')
 let description = document.getElementsByClassName('description')
@@ -60,16 +60,16 @@ function infoimage(i){
         description[i].style.left=0 +'%';
     } 
     if ((i==1) || (i==4) || (i==5)){ // destination de la deuxième colonne
-        description[i].style.left=50 +'%';
+        description[i].style.left=40 +'%';
     } 
     if (i<3){ // 1ère ligne
-        description[i].style.top=33.3 +'%';
+        description[i].style.top=30.3 +'%';
     } 
     if ((i>=3) & (i<6)){ // 2ème ligne
-        description[i].style.top=66.6 +'%';
+        description[i].style.top=60.6 +'%';
     } 
-    if (i<3){ // dernière ligne
-        description[i].style.top=90+'%';
+    if (i>=6){ // dernière ligne
+        description[i].style.top=85+'%';
     }
 }
 
@@ -84,3 +84,4 @@ function flouimage(i){
 function enleveflouimage(i){
     document.getElementById(i).style.opacity=1;
 }
+

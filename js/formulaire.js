@@ -20,24 +20,36 @@ class formulaire{
 
 //Formulaire
 
-    //Récupérer les informations 
-
-    let NbrAdultes= document.getElementsByName("Nombre d'adulte(s)")
-    let NbrEnfants= document.getElementsByName("Nombre d'enfant(s)")
-
     //Afficher le Prix total
 
-    document.getElementById("bPrix").addEventListener("click", afficherprix(100,2,1,1,1,4));
-    function afficherprix(pPrix,pAdultes,pEnfants,pAnimaux,pPtitDej,pNuit) {
-        console.log("")
-        let PrixTotal=(pPrix*pAdultes +(4/10)*pPrix*pEnfants)*pNuit
-        if (pAnimaux==1){
-            PrixTotal+=10*pNuit
-        }
+let dureeSejour=0;
+function calculTotal() {
+
+    let nbenfant = Number(document.getElementById("enfant").value);
+    let nbadulte = Number(document.getElementById("adulte").value);
+    let PrixTotal = Math.round(nbenfant*0,4+nbadulte);
+    
         if (pPtitDej==1){
-            PrixTotal+=12*(pAdultes +(4/10)*pEnfants)
+            PrixTotal += 12*(pAdultes +(4/10)*pEnfants)
         }
     }
         document.getElementById("zoneprix").innerHTML = PrixTotal + "Euros"
 
 
+let dureeSejour=0;
+function calculTotal() {
+
+    let nbenfant = Number(document.getElementById("enfant").value);
+    let nbadulte = Number(document.getElementById("adulte").value);
+    dureeSejour = (document.querySelector('input[type="date"]#arrivee').valueAsNumber-document.querySelector('input[type="date"]#depart').valueAsNumber)/86400000 //Ecart en jour entre le départ et le retour (millisecondes a la base)
+    let montant = Math.round((nbenfant*0.4+nbadulte)*prixcroi[sejour_id].prix) ; 
+    if(document.getElementById('ouidej').checked){
+        montant +=12*(nbmin+nbmaj);
+        montant *=dureeSejour;
+    }
+    else{
+        amount*=dureeSejour;
+    }
+    document.getElementById("prix").innerHTML = amount+' €';
+}
+calculTotal();
