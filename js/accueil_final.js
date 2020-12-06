@@ -28,7 +28,7 @@ arrivee = function (x){
 /*Slider*/
 
 var compteurImage = 1;
-var totalImage = 6;
+var totalImage = 7;
 
 function slider(x){
 

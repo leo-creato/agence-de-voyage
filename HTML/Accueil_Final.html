@@ -4,7 +4,7 @@
 
     <head>
         <link rel="stylesheet" href="../css/Accueil_Final.css">
-        <script src="../js/accueil_final.js" defer></script>
+        <script src="../js/accueil_final.js"></script>
         <meta charset="UTF-8">
         <title>TTV | Acceuil</title>
     </head>
@@ -25,20 +25,20 @@
 
 
         <!--Affichage des Destinations-->
-        <div id="slider">
-                
-            <img src="../Image/avion2.jpg" id="img">
+        
+            <div id="slider">
+                    
+                <img src="../Image/avion2.jpg" id="img">
+                <div class="ville">
+                    <a id="city" href="../HTML/réservation.html?id={{id}}"></a>
+                    <div id="price">Cliquez</div>
+                    <div id="meteo">Voyagez</div>
+                </div>
 
-            <div class="ville">
-                <a id="city" href="../HTML/réservation.html"></a>
-                <div id="price">Cliquez</div>
-                <div id="meteo">Voyagez</div>
-            </div>
+                <div id="btn_left"><img src="../Image/left.png" class="left" onclick="slider(-1)"></div>
+                <div id="btn_right"><img src="../Image/right.png" class="right" onclick="slider(1)"></div>
 
-            <div id="btn_left"><img src="../Image/left.png" class="left" onclick="slider(-1)"></div>
-            <div id="btn_right"><img src="../Image/right.png" class="right" onclick="slider(1)"></div>
-
-        </div><br><br><br><br>
+            </div><br><br><br><br>
 
             <!--Bas de Page-->
             <footer>

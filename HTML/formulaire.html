@@ -65,15 +65,14 @@
                 Les champs avec un * sont obligatoires à remplir
             </fieldset><br>  
         </form>
-            <!--<fieldset>
-                <legend>Prix</legend>
-                <button id="bPrix"> Afficher le prix </button>
-                <p id="zoneprix">0</p>
-            </fieldset>  -->
+        Id du voyage :<input name="numero" type="texte" id="numero" readonly>                            
+        <input type="submit" id=valider value="Valider" class="btn">                              
+        <input type="reset" onclick="calculPrix()">
 
-            <a href="../HTML/Recapitulatif.html"> <button> Enregistrer mes informations</button></a> 
+        <a href="../HTML/Recapitulatif.html"> <button> Enregistrer mes informations</button></a> 
 
         <script src="../js/StockageFormulaire.js"></script> 
+        <script src="../js/formulaire.js"></script>
         
         <!-- Bouton pour retour vers le haut-->
 		<div id="scrollUp">
