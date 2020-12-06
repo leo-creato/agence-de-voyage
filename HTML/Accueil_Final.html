@@ -50,10 +50,12 @@
                         <!--Connexion compte client-->
                         <div class="login-container">
                             <form action="../js/template.js" method="post">
-                                <input type="text"  name="nom" placeholder="Nom d'utilisateur" required="required">
-                                <input type="text" name="mdp" placeholder="Mot de passe" required="required">
-                                <button type="submit">Connexion</button>
+                                <input type="text" id="nom" placeholder="Nom d'utilisateur" required="required">
+                                <input type="text" id="mdp" placeholder="Mot de passe" required="required">
+                                <input id = "connexion" type= "button" value = "connexion">Connexion</input>
+                                <button type="reset">reset</button>
                             </form>
+
                         </div>
                 </fieldset>
             </footer>
@@ -62,7 +64,7 @@
             <div id="scrollUp">
                 <a href="#top"><img src="../Image/bouton3.png"/></a>
             </div>
-
+            <script src="../js/connexion.js"></script>
     </body>
     
 </html>
