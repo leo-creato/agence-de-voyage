@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+    <head>
+        <link rel="stylesheet" href="../css/Accueil_Final.css">
+        <script src="../js/accueil_final.js" defer></script>
+        <meta charset="UTF-8">
+        <title>TTV | Acceuil</title>
+    </head>
+
+    <body>
+
+            <!--Haut de la page d'Accueil-->
+            <h1>TUK-TUK Voyage</h1>
+            <p>Bienvenu sur TUK-TUK Voyage, des voyages dans des destinations originales</p><br>
+
+        <!--Barre d'outil du site-->
+        <nav class="bande">
+            <a href="../HTML/Accueil_Final.html" class="active">Accueil</a>
+            <a href="../HTML/panier.html" class="active">Panier</a>
+            <a href="../HTML/contact.html" class="active">A propos</a>
+            <input type="text" placeholder="Recherche ...">
+        </nav>
+
+
+        <!--Affichage des Destinations-->
+        <div id="slider">
+                
+            <img src="../Image/avion2.jpg" id="img">
+
+            <div class="ville">
+                <a id="city" href="../HTML/réservation.html"></a>
+                <div id="price">Cliquez</div>
+                <div id="meteo">Voyagez</div>
+            </div>
+
+            <div id="btn_left"><img src="../Image/left.png" class="left" onclick="slider(-1)"></div>
+            <div id="btn_right"><img src="../Image/right.png" class="right" onclick="slider(1)"></div>
+
+        </div><br><br><br><br>
+
+            <!--Bas de Page-->
+            <footer>
+                <fieldset>
+                    <legend>Résaux</legend>
+                        <p>© 2020 TTV</p>
+                        <p>Compte client</p>
+    
+                        <!--Connexion compte client-->
+                        <div class="login-container">
+                            <form action="../js/template.js" method="post">
+                                <input type="text"  name="nom" placeholder="Nom d'utilisateur" required="required">
+                                <input type="text" name="mdp" placeholder="Mot de passe" required="required">
+                                <button type="submit">Connexion</button>
+                            </form>
+                        </div>
+                </fieldset>
+            </footer>
+    
+            <!-- Bouton pour retour vers le haut-->
+            <div id="scrollUp">
+                <a href="#top"><img src="../Image/bouton3.png"/></a>
+            </div>
+
+    </body>
+    
+</html>
