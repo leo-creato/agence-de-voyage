@@ -1,11 +1,16 @@
+// Test pour le calcul du Prix mais ne focntionne pas, la fonction n'est pas complète et pb de récupération de l'id et le prix de mes destinations
+
 let sejour_id = new URLSearchParams(window.location.search).get("id");
+
+
+// Calcul du prix Test 1
 
 let dateajd = new Date();
 let datedem = new Date();
 
 var petitdej = document.getElementsByName("Ptit_dej");
 
-function dates(){
+function dates(){ // Fonction pour traiter le pb de la date
      datedem.setDate(dateajd.getDate()+1);
      if (dateajd.getDate()<9){
          document.getElementById('date_depart').value= dateajd.getFullYear()+'-'+(dateajd.getMonth()+1)+'-0'+dateajd.getDate();
@@ -28,7 +33,7 @@ function dates(){
  }
  dates();
 
-// Calcul du prix Test
+
 
 const villereserve = villes.find(ville => ville.id==sejour_id)
 
@@ -50,33 +55,3 @@ function calculPrix(){
 calculPrix();
 
 document.getElementById("numero").value=sejour_id
-
-// Calcul du prix Test
-
-function calculerprix(pP,pE,pN,pD) {
-    let PrixTot=(pP*pA+(4/10)*pP*pE)*pN
-    if (pD==1) {
-        PrixTot+=12*(pA + (4/10)*pE)
-    }
-    return PrixTot
-}
-
-function actualiser(){
-    let nom = document.getElementById("lastname").value;
-    let prenom = document.getElementById("firstname").value;
-    let date_depart = document.getElementById("date_depart").value
-    let date_arrivee = document.getElementById("date_arrivee").value;
-    let pD = document.getElementById("dejo").checked; //checked si on coche et value si on tape des éléments
-    let adulte = document.getElementById("adulte").value;
-    let enfant = document.getElementById("enfant").value;
-    let Ptit_dej = 0
-    let prix = 
-    if (date_depart !== null && date_depart !== null && adulte !== null && enfant !== null) {
-        if (pD == true){
-            Ptit_dej = 1
-        }
-        let PrixTotal = calculprix(prix, adulte, enfant, Ptit_dej)
-        document.getElementById("ok").innerHTML = PrixTotal
-    }
-  
-}

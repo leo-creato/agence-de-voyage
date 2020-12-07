@@ -5,6 +5,9 @@ class utilisateur {
     }
 }
 
+
+// Va stocker nos informations d'identification
+
 var pseudoElt = document.getElementById("nom");
 
 var mdpElt = document.getElementById("mdp");
@@ -29,15 +32,16 @@ listeMdp = [
 
 var btn = document.getElementById("connexion");
 
-// va verifier qu'on est enregistré quand on appuie sur le bouton connexion
+// va verifier qu'on est enregistré quand on appuie sur le bouton connexion et renvoie si on est bien connecter à ce site ou non
 
 btn.addEventListener('click', updateBtn)
 function updateBtn(){
     if(testco(pseudoElt.value,mdpElt.value)){
         redirectionformulaire()
+        alert("vous etes bien connecté(e) sur ce site")
     }
     else{
-        alert("vous n'etes pas enregistre sur ce site")
+        alert("vous n'etes pas enregistré(e) sur ce site")
     }
 
 }
@@ -52,17 +56,8 @@ function testco(pnom,pmdp){
 }
 
 function redirectionformulaire(){
-    document.location.href="../HTML/formulaire.html";
+    document.location.href="../HTML/Accueil_Final.html";
 }
-
-
-
-var Test=[
-    new utilisateur("leo","bouchet"),
-    new utilisateur("", "cc"),
-
-]
-
 
 
 // fonction pour le bouton retour vers le haut

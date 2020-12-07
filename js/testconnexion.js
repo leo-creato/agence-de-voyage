@@ -1,3 +1,5 @@
+// Test sur la connexion compte client
+
 
 class utilisateur {
     constructor(pseudo,mdp) {
@@ -11,6 +13,7 @@ var pseudoElt = document.getElementById("nom");
 var mdpElt = document.getElementById("mdp");
 
 
+// Va stocker nos informations d'identification
 monStorage = localStorage;
 localStorage.setItem('pseudo1',"leo");
 localStorage.setItem('password1',"bouchet");

@@ -28,7 +28,7 @@ a:hover {
     background-color: royalblue;
 }
 
-
+/* Fond du site */
 body {   
     background-image: url(../Image/ciel.jpg);
     background-attachment: fixed; 
@@ -53,7 +53,7 @@ body {
     transition: fill 0.2s;
 }
 
-.map_img path:hover{
+.map_img path:hover{ /* Tout les pays du monde en rouge sauf ceux de notre liste */
     fill:red;
 }
 
@@ -68,9 +68,9 @@ body {
 
 }
 
-.map_list a{
+.map_list a{ /* Cadre autour des destinations et écriture */
     text-decoration: none;
-    color: #1F2582;
+    color: royalblue;
     transition: color 0.2s;
 
 }
@@ -81,11 +81,11 @@ body {
 
 }
 
-.map_list ul li{
+.map_list ul li{ /* Fond du cradre des destinations */
     
     text-align: center;
     background-color: white;
-    border:solid 1px #1F2582;
+    border:solid 1px royalblue;
     list-style-type: none;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -97,7 +97,7 @@ body {
 
 
 .map_list ul li.is-active{
-    background-color: #1F2582;
+    background-color: royalblue
 }
 
 
@@ -108,9 +108,9 @@ body {
     color:white;
 }
 
-.map_img .is-active path{
+.map_img .is-active path{ /* Pays de notre liste sont bleu quand notre souris passe dessus */
 
-    fill: green;
+    fill: royalblue;
 
 }
 
