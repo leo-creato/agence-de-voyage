@@ -1,7 +1,8 @@
-// Map monde pour nos des
+/* WorldMap */
 
+/* Récupération des différents id */
 
-var map = document.querySelector("div.map")
+var map = document.querySelector("div.map") 
 
 console.log(map)
 
@@ -35,8 +36,8 @@ links.forEach(function(link){
     link.addEventListener("mouseenter",function(){
         var id = this.id.replace("lst-" , "")
         console.log(id)
-        
-        activeArea(id)   
+ 
+        activeArea(id)    
     }) 
 })
 
@@ -54,14 +55,11 @@ var activeArea = function(id){
         document.querySelector("#li-" + id).classList.add("is-active")
 
     }
-
-
 }
 
 
 map.addEventListener("mouseover", function(){
     activeArea()
 })
-
 
 console.log(boites)
