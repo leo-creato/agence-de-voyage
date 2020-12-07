@@ -4,7 +4,7 @@
 
 -Mon site n'a pas de calcul de prix automatique et ne permet pas de récupérer la destination cliquer ( assez embêtant ), il n'y a pas non plus d'option de filtrage dans la page d'accueil
 
--La fin du site se situe à la page de récapitulation
+-La fin du site se situe à la fin.html
 
 -Le panier est un brouillon, il avait été commencé mais jamais terminé puisque vous aviez précisé qu'il s'agissait d'une option
 
