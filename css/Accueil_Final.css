@@ -28,13 +28,12 @@ a:hover {
     background-color: royalblue;
 }
     
-/* Traitement de ce qu'il y a dans le body */
+/* Traitement de ce qu'il y a dans le body ici image de fond qui est malheureusement pas uniforme */
 body {   
    background-image: url(../Image/ciel.jpg);
    background-attachment: fixed; 
 }
 
-/*Slider*/
 
 #slider { /* Réglage général du slider */
     background-color: transparent;
@@ -54,7 +53,7 @@ body {
     margin-right: auto;
 }
 
-#btn_left {
+#btn_left { /* Réglage du bouton à gauche du slider */
     height: 550px;
     width: 100px;
     left: 0px;
@@ -62,7 +61,7 @@ body {
     position: absolute;
 }
 
-#btn_right {
+#btn_right { /* Réglage du bouton à droite du slider */
     height: 550px;
     width: 100px;
     right: 0px;
@@ -96,6 +95,7 @@ body {
     opacity: 1;
 }
 
+/* Réglage du cadre des différentes destinations */
 .ville {
     z-index: 2;
     background-color: royalblue;
@@ -109,6 +109,7 @@ body {
     line-height: normal;
 }
 
+/* Réglage des éléments présents dans le cadre des différentes destinations */
 #city {
     font-size: 60px;
     text-decoration: underline;
@@ -140,13 +141,13 @@ footer {
     padding: 10px;
     background-color: royalblue;
     color: #fff;
-  }
+}
+
+/* bouton top */
   
-  /* bouton top */
-  
-  #scrollUp{
+#scrollUp{
   position: fixed;
   bottom : 10px;
   right: -100px;
   opacity: 0.5;
-  }
+}

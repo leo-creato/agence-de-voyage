@@ -2,7 +2,7 @@
 
 const APIKEY = '8b0858cd9a4bd16d00cb60a9e87ee0ee';
 
-/*Objet ville*/
+/* Objet destination */
 
 arrivee = function (x){
     if (x==1){
@@ -30,8 +30,7 @@ arrivee = function (x){
 var compteurImage = 1;
 var totalImage = 7;
 
-function slider(x){
-
+function slider(x){ /* Fonction qui permet de faire slider nos destinations */
     var image = document.getElementById('img');
 
     compteurImage = compteurImage+x;
@@ -49,7 +48,7 @@ function slider(x){
     document.querySelector("#price").innerHTML = arrivee(compteurImage)[0].prix;
 }
 
-function sliderAuto(){
+function sliderAuto(){ /* Fonction qui permet de faire slider les destinations automatiquement */
 
     var image = document.getElementById('img');
 
@@ -70,7 +69,7 @@ function sliderAuto(){
 
 window.setInterval(sliderAuto,4500);
 
-/*Appel API météo*/
+/* Appel API météo */
 
 let apiCall = function(city) {
 
