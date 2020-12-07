@@ -8,4 +8,8 @@
 
 -Le panier est un brouillon, il avait été commencé mais jamais terminé puisque vous aviez précisé qu'il s'agissait d'une option
 
+-Il y a beaucoup d'erreurs sur le fichier html worldmap j'ai commencé à corriger une partie mais c'est trop long pour tout corriger.
+
+-La partie "recherche" dans la barre de navigation est simplement un coté esthétique en plus, cela ne fonctionne pas.
+
 Je tiens à préciser et rappeler que j'ai effectué ce site en très grande partie seul ( Mr GEINET n'a fait que la partie connexion ), je ne suis pas excusé sur le fait que mon site est incomplet mais je vous simplement précisé que ce travail a été en très majeur partie effectué seul
