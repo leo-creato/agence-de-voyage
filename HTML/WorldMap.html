@@ -11,7 +11,16 @@
 
 <body>
     
-
+    <!--Haut de la page d'Accueil-->
+    <h1>Vous pouvez sélectionner nos différentes destinations avec notre mapmonde intéractive</h1>
+    
+    <nav class="bande">
+        <a href="../HTML/Accueil_Final.html" class="active">Accueil</a>
+        <a href="../HTML/panier.html" class="active">Panier</a>
+        <a href="../HTML/contact.html" class="active">A propos & contact</a>
+        <a href="../HTML/WorldMap.html" class="active">WorldMap</a>
+        <input type="text" placeholder="Recherche ...">
+    </nav>
 
     <div class="map" id="map">
 
@@ -448,6 +457,31 @@
 
     </div>
 
+     <!--Bas de Page-->
+     <footer>
+        <fieldset>
+            <legend>Résaux</legend>
+                <p>© 2020 TTV</p>
+                <p>Compte client</p>
 
+                <!--Connexion compte client-->
+                <div class="login-container">
+                    <form action="../js/template.js" method="post">
+                        <input type="text" id="nom" placeholder="Nom d'utilisateur" required="required">
+                        <input type="text" id="mdp" placeholder="Mot de passe" required="required">
+                        <input id = "connexion" type= "button" value = "connexion">Connexion</input>
+                        <button type="reset">reset</button>
+                    </form>
+
+                </div>
+        </fieldset>
+    </footer>
+
+    <!-- Bouton pour retour vers le haut-->
+    <div id="scrollUp">
+        <a href="#top"><img src="../Image/bouton3.png"/></a>
+    </div>
+    <script src="../js/connexion.js"></script>
+    <script src="../js/connexion.js"></script>
     <script src=../js/worldmap.js></script>
 </body>

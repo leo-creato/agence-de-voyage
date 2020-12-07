@@ -1,9 +1,45 @@
+/* Bande de naviagation */
+.bande{
+    background-color: royalblue; /*couleur de la bande */
+    text-align: center;
+}
+/* A propos du titre */
+h1 {
+    color: black;  
+    text-align:center
+}
+
+/* A propos de la phrae du dessous */
+p {
+  font-style: italic;
+  color: black;
+  text-align:center
+}
+.bande a {
+    display: inline-block;
+    background-color:dodgerblue; /*couleur de fond des blocs */
+    color: black; /*couleur du text de la page */
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: lawngreen;
+}
+/*Effet quand on met notre souris une accueil par exemple */
+a:hover { 
+    background-color: royalblue;
+}
+
+
+body {   
+    background-image: url(../Image/ciel.jpg);
+    background-attachment: fixed; 
+ }
+
 .map{
     position: relative;
 }
 
 .map_img{
-    width: 80%;
+    width: 92%;
     height: 100%;
     float: left;
     padding-right: 10rem;
@@ -72,12 +108,16 @@
     color:white;
 }
 
-
-
-
-
 .map_img .is-active path{
 
     fill: green;
 
+}
+
+
+#scrollUp{
+    position: fixed;
+    bottom : 10px;
+    right: -100px;
+    opacity: 0.3;
 }
